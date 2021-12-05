@@ -1,0 +1,158 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle": "custom"
+			}
+		}
+	    ,{
+            "path" : "pages/water-intake-archives/water-intake-archives",
+            "style" :
+            {
+                "navigationBarTitleText": "取水档案",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/demonstration/demonstration",
+            "style" :
+            {
+                "navigationBarTitleText": "水资源论证",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/enterprise-information/enterprise-information",
+            "style" :
+            {
+                "navigationBarTitleText": "企业基础信息",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/transaction/transaction",
+            "style" :
+            {
+                "navigationBarTitleText": "水权交易",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/preview/preview",
+            "style" :
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/water-intake-permit/water-intake-permit",
+            "style" :
+            {
+                "navigationBarTitleText": "取水许可",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/water-intake-plan/water-intake-plan",
+            "style" :
+            {
+                "navigationBarTitleText": "取水计划",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/levy/levy",
+            "style" :
+            {
+                "navigationBarTitleText": "水资源征费",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/monitor/monitor",
+            "style" :
+            {
+                "navigationBarTitleText": "取水设施/计量监控",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/supervise/supervise",
+            "style" :
+            {
+                "navigationBarTitleText": "监督管理",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/supervision-details/supervision-details",
+            "style" :
+            {
+                "navigationBarTitleText": "监督管理详情",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/water-balance/water-balance",
+            "style" :
+            {
+                "navigationBarTitleText": "水平衡测试",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/audit/audit",
+            "style" :
+            {
+                "navigationBarTitleText": "用水审计",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+        ,{
+            "path" : "pages/water-conservation/water-conservation",
+            "style" :
+            {
+                "navigationBarTitleText": "节水型载体",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#4181F0"
+            }
+
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
