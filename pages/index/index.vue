@@ -6,18 +6,23 @@
         <u-input shape="circle"
                  placeholder="请输入公司名称搜索"
                  color="#36373f"
+                 height="200"
                  @confirm="search"
                  @change="inputChange"
+
         >
-          <i class="iconfont icon-saoma scan-code"
-             slot="prefix"
-             @click="scanCode"
-          />
-          <u-icon name="search"
-                  slot="suffix"
-                  size="20"
-                  @click="search"
-          />
+          <view slot="prefix"
+                class="left"
+          >
+            <image src="../../static/index/sm@2x.png"
+                   @click="scanCode"/>
+          </view>
+          <view  slot="suffix"
+                 class="right"
+          >
+            <image src="../../static/index/search@2x.png"
+                   @click="search"/>
+          </view>
         </u-input>
       </view>
     </view>
@@ -42,7 +47,7 @@
               </u-col>
               <u-col span="2">
                 <view class="arrow line">
-                  <u-icon name="arrow-right" color="#B4BAC7" size="14"/>
+                  <u-icon name="arrow-right" color="#dfdfdf" size="14"/>
                 </view>
               </u-col>
             </u-row>
@@ -64,60 +69,12 @@
               </u-col>
               <u-col span="2">
                 <view class="arrow">
-                  <u-icon name="arrow-right" color="#B4BAC7" size="14"/>
+                  <u-icon name="arrow-right" color="#dfdfdf" size="14"/>
                 </view>
               </u-col>
             </u-row>
           </view>
         </view>
-        <view class="content-item">
-        <view class="content-item-left">
-          <u-row>
-            <u-col span="5">
-              <view class="img-box">
-                <image src="../../static/index/news@2x.png"></image>
-              </view>
-            </u-col>
-            <u-col span="5">
-              <view class="new-info">
-                <view class="title">系统通知</view>
-                <view class="subtitle">
-                  <text>新消息</text>
-                  <text class="number">3</text>
-                </view>
-              </view>
-            </u-col>
-            <u-col span="2">
-              <view class="arrow line">
-                <u-icon name="arrow-right" color="#B4BAC7" size="14"/>
-              </view>
-            </u-col>
-          </u-row>
-        </view>
-        <view class="content-item-right">
-          <u-row>
-            <u-col span="5">
-              <view class="img-box">
-                <image src="../../static/index/news@2x.png"></image>
-              </view>
-            </u-col>
-            <u-col span="5">
-              <view class="new-info">
-                <view class="title">系统通知</view>
-                <view class="subtitle">
-                  <text>新消息</text>
-                  <text class="number">3</text>
-                </view>
-              </view>
-            </u-col>
-            <u-col span="2">
-              <view class="arrow">
-                <u-icon name="arrow-right" color="#B4BAC7" size="14"/>
-              </view>
-            </u-col>
-          </u-row>
-        </view>
-      </view>
       </view>
       <view class="search-content" v-else>
         <view class="search-item"
@@ -232,10 +189,11 @@
   }
   .search-box{
     width: 688rpx;
-    height: 84rpx;
     margin: 0 auto;
     /deep/ .u-input{
       background: #ffffff;
+      height: 70rpx;
+      line-height: 70rpx;
       .input-placeholder{
         padding-left: 20rpx;
         color: #939fb8;
@@ -248,9 +206,17 @@
         width: 100%;
       }
     }
-    .scan-code{
-      font-size: 30rpx;
-      color: #3f83ef;
+    image{
+      width: 40rpx;
+      height: 40rpx;
+      position: relative;
+      top: 10rpx;
+    }
+    .left{
+      padding-left: 10rpx;
+    }
+    .right{
+      padding-right: 20rpx;
     }
   }
 }
@@ -296,14 +262,17 @@
             display: inline-block;
             margin-left: 10rpx;
             color: #f1a532;
+            font-weight: 700;
           }
         }
       }
       .line{
-        border-right: 2rpx solid #D9D9D9;
+        border-right: 2rpx solid #f1f1f1;
       }
       .arrow{
-        padding-left: 12rpx;
+        padding: 16rpx 0 0 12rpx;
+        height: 60rpx;
+        box-sizing: border-box;
       }
     }
     .content-item-right{
@@ -342,6 +311,7 @@
     border-top: 2rpx solid#e6e6e6;
     padding: 28rpx 26rpx 28rpx 36rpx;
     .img-box{
+      padding-top: 14rpx;
       image{
         width: 88rpx;
         height: 88rpx;

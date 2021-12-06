@@ -43,12 +43,196 @@
         <text>水利工程费</text>
       </view>
     </view>
-    <view class="table-box">
+    <view class="table-box table-box1" v-if="activeIndex === 0">
       <view class="roll">
         <view class="table">
           <view class="head">
             <view class="number">
-              <text>取水缴费时间</text>
+              <text>取水缴费期间</text>
+            </view>
+            <view class="year">
+              <text>上月抄表数</text>
+            </view>
+            <view class="application">
+              <text>本月抄表数</text>
+            </view>
+            <view class="evaluation-form">
+              <text>本月取水量</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>1月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>2月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>3月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>4月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="table-box" v-if="activeIndex === 1">
+      <view class="roll">
+        <view class="table">
+          <view class="head">
+            <view class="number">
+              <text>取水缴费期间</text>
+            </view>
+            <view class="year">
+              <text>收费标准</text>
+            </view>
+            <view class="application">
+              <text>本月应收费用</text>
+            </view>
+            <view class="evaluation-form">
+              <text>本月实收费用</text>
+            </view>
+            <view class="decision">
+              <text>累计应收费用</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>1月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>1月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>1月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>1月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
+          </view>
+          <view class="table-r">
+            <view class="number">
+              <text>1月</text>
+            </view>
+            <view class="year">
+              <text>0.3</text>
+            </view>
+            <view class="application">
+              <text>0.00</text>
+            </view>
+            <view class="evaluation-form">
+              <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="table-box" v-if="activeIndex === 2">
+      <view class="roll">
+        <view class="table">
+          <view class="head">
+            <view class="number">
+              <text>取水缴费期间</text>
             </view>
             <view class="year">
               <text>收费标准</text>
@@ -276,6 +460,67 @@
             flex: 1;
           }
           .decision{
+            flex: 1;
+          }
+        }
+        .table-r{
+          display: flex;
+          font-size: 24rpx;
+          color: #808080;
+          font-family: PingFangSC, PingFangSC-Regular;
+          font-weight: 400;
+          height: 72rpx;
+          line-height: 72rpx;
+          .number{
+            flex: 1;
+            padding-left: 28rpx;
+          }
+          .year{
+            flex: 1;
+          }
+          .application{
+            flex: 1;
+          }
+          .evaluation-form{
+            flex: 1;
+          }
+          .decision{
+            flex: 1;
+          }
+        }
+        .table-r:nth-child(2n + 1) {
+          background: #f7f7f7;
+        }
+      }
+    }
+
+  }
+  .table-box1{
+    .roll{
+      overflow: hidden;
+      .table{
+        width: 686rpx;
+        border: 2rpx solid #e6e6e6;
+        .head{
+          display: flex;
+          font-size: 24rpx;
+          color: #333333;
+          font-family: PingFangSC, PingFangSC-Regular;
+          font-weight: 400;
+          height: 72rpx;
+          line-height: 72rpx;
+          background: #f1f6ff;
+          .number{
+            flex: 1;
+            padding-left: 28rpx;
+          }
+          .year{
+            flex: 1;
+          }
+          .application{
+            flex: 1;
+          }
+          .evaluation-form{
             flex: 1;
           }
         }

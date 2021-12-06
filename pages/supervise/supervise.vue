@@ -20,72 +20,21 @@
               <text>填报单位</text>
             </view>
           </view>
-          <view class="table-r">
+          <view class="table-r" v-for="(item, index) in tableData" :key="index">
             <view class="number">
-              <text>01</text>
+              <text>{{ item.id }}</text>
             </view>
             <view class="year">
-              <text>9194583920028589D</text>
+              <text>{{ item.t1 }}</text>
             </view>
             <view class="application">
-              <text>日常监管</text>
+              <text>{{ item.t2 }}</text>
             </view>
             <view class="evaluation-form">
-              <text>查看</text>
+              <text @click="goPage">{{ item.t3 }}</text>
             </view>
             <view class="decision">
-              <text>东港镇水利管理站</text>
-            </view>
-          </view>
-          <view class="table-r">
-            <view class="number">
-              <text>01</text>
-            </view>
-            <view class="year">
-              <text>9194583920028589D</text>
-            </view>
-            <view class="application">
-              <text>日常监管</text>
-            </view>
-            <view class="evaluation-form">
-              <text>查看</text>
-            </view>
-            <view class="decision">
-              <text>东港镇水利管理站</text>
-            </view>
-          </view>
-          <view class="table-r">
-            <view class="number">
-              <text>01</text>
-            </view>
-            <view class="year">
-              <text>9194583920028589D</text>
-            </view>
-            <view class="application">
-              <text>日常监管</text>
-            </view>
-            <view class="evaluation-form">
-              <text>查看</text>
-            </view>
-            <view class="decision">
-              <text>东港镇水利管理站</text>
-            </view>
-          </view>
-          <view class="table-r">
-            <view class="number">
-              <text>01</text>
-            </view>
-            <view class="year">
-              <text>9194583920028589D</text>
-            </view>
-            <view class="application">
-              <text>日常监管</text>
-            </view>
-            <view class="evaluation-form">
-              <text>查看</text>
-            </view>
-            <view class="decision">
-              <text>东港镇水利管理站</text>
+              <text>{{ item.t4 }}</text>
             </view>
           </view>
         </view>
@@ -98,11 +47,72 @@
 export default {
   data() {
     return {
-
+      tableData: [
+        {
+          id: '01',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        },
+        {
+          id: '02',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        },
+        {
+          id: '03',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        },
+        {
+          id: '04',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        },
+        {
+          id: '05',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        },
+        {
+          id: '06',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        },
+        {
+          id: '07',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        },
+        {
+          id: '08',
+          t1: '9194583920028589D',
+          t2: '日常监管',
+          t3: '查看',
+          t4: '东港镇水利管理站'
+        }
+      ]
     }
   },
   methods: {
-
+    goPage() {
+      uni.navigateTo({
+        url: '/pages/supervision-details/supervision-details'
+      })
+    },
   }
 }
 </script>

@@ -37,7 +37,7 @@
       <text class="left">允许日最大取水量（m³/天）</text>
       <text class="right">5479.5</text>
     </view>
-    <view class="item-box">
+    <view class="item-box" @click="isTips">
       <view>
         <text class="left">取水许可申请表</text>
       </view>
@@ -47,7 +47,7 @@
       </view>
 
     </view>
-    <view class="item-box">
+    <view class="item-box" @click="isTips">
       <view>
         <text class="left">取水许可登记表</text>
       </view>
@@ -57,7 +57,7 @@
       </view>
 
     </view>
-    <view class="item-box">
+    <view class="item-box" @click="isTips">
       <view>
         <text class="left">取水许可批复文件</text>
       </view>
@@ -67,7 +67,7 @@
       </view>
 
     </view>
-    <view class="item-box">
+    <view class="item-box" @click="isTips">
       <text class="left">取水许可证</text>
       <text class="right"></text>
     </view>
@@ -166,13 +166,13 @@
         show: false
 			}
 		},
-    onLoad() {
-      this.$refs.uToast.show({
-        message: '详情查阅锡山区取水监管信息化系统',
-        duration: 2000
-      })
-    },
 		methods: {
+      isTips() {
+        this.$refs.uToast.show({
+          message: '详情查阅锡山区取水监管信息化系统',
+          duration: 2000
+        })
+      },
       open() {
         this.show = true
       },

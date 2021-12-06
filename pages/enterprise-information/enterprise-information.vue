@@ -119,7 +119,7 @@
     height: 92rpx;
     line-height: 92rpx;
     padding: 0 30rpx;
-    border-bottom: 2rpx solid #e6e6e6;
+    border-bottom: 2rpx solid #f7f7f7;
     display: flex;
     justify-content: space-between;
     .left{
@@ -147,7 +147,9 @@
       padding:26rpx 0 20rpx 32rpx;
     }
     .table{
-      padding: 0 32rpx;
+      border: 2rpx solid #e6e6e6;
+      width: 704rpx;
+      margin: 0 auto;
       .head{
         display: flex;
         height: 72rpx;

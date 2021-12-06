@@ -9,10 +9,10 @@
       <view class="describe">
         <view class="title">现场检查记录</view>
         <view class="text">
-          <view class="file-text">文件材料6.pdf</view>
-          <view class="file-text">文件材料4.pdf</view>
-          <view class="file-text">现场图片.png</view>
-          <view class="file-text">现场图片.jpg</view>
+          <view class="file-text" @click="tips">文件材料6.pdf</view>
+          <view class="file-text" @click="tips">文件材料4.pdf</view>
+          <view class="file-text" @click="tips">现场图片.png</view>
+          <view class="file-text" @click="tips">现场图片.jpg</view>
         </view>
       </view>
     </view>
@@ -49,19 +49,18 @@
 
 <script>
 	export default {
-    onLoad() {
-      this.$refs.uToast.show({
-        message: '详情查阅锡山区取水监管信息化系统',
-        duration: 2000
-      })
-    },
 		data() {
 			return {
 
 			}
 		},
 		methods: {
-
+      tips() {
+        this.$refs.uToast.show({
+          message: '详情查阅锡山区取水监管信息化系统',
+          duration: 2000
+        })
+      }
 		}
 	}
 </script>

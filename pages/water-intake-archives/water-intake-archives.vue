@@ -174,6 +174,7 @@
   .search-item{
     padding: 28rpx 26rpx 28rpx 36rpx;
     .img-box{
+      padding-top: 14rpx;
       image{
         width: 88rpx;
         height: 88rpx;
