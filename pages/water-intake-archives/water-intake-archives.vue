@@ -50,7 +50,7 @@
     </view>
     <view class="contact-information">
       <view class="left">
-        <i class="iconfont icon-24gl-phoneLoudspeaker iphone"/>
+        <image src="../../static/water-intake-archives/iphone@2x.png"/>
         <text class="txt">
           联系电话：
         </text>
@@ -112,7 +112,7 @@
             pagePath: '/pages/monitor/monitor'
           },
           {
-            path: '../../static/water-intake-archives/jd@2x.png',
+            path: '../../static/water-intake-archives/qsjh@2x.png',
             text: '取水计划',
             pagePath: '/pages/water-intake-plan/water-intake-plan'
           },
@@ -172,7 +172,7 @@
 <style scoped lang="scss">
 .water-intake-archives{
   .search-item{
-    padding: 28rpx 26rpx 28rpx 36rpx;
+    padding: 28rpx 26rpx 20rpx 36rpx;
     .img-box{
       padding-top: 14rpx;
       image{
@@ -279,8 +279,9 @@
     color: #36373f;
     .left{
       display: flex;
-      .iphone{
-        color: #9ba0ab;
+      image{
+        width: 40rpx;
+        height: 40rpx;
       }
       .txt{
         font-size: 26rpx;
@@ -323,7 +324,7 @@
         display: inline-block;
         width: 130rpx;
         margin-top: 16rpx;
-        text-align: center;
+        text-align: left;
       }
     }
   }

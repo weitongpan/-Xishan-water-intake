@@ -16,6 +16,10 @@
           >
             <image src="../../static/index/sm@2x.png"
                    @click="scanCode"/>
+            <image src="../../static/index/line3@2x.png"
+                   @click="scanCode"
+                   class="line"
+            />
           </view>
           <view  slot="suffix"
                  class="right"
@@ -56,7 +60,7 @@
             <u-row>
               <u-col span="5">
                 <view class="img-box">
-                  <image src="../../static/index/news@2x.png"></image>
+                  <image src="../../static/index/cb@2x.png"></image>
                 </view>
               </u-col>
               <u-col span="5">
@@ -192,10 +196,11 @@
     margin: 0 auto;
     /deep/ .u-input{
       background: #ffffff;
-      height: 70rpx;
+      height: 84rpx;
+      box-sizing: border-box;
       line-height: 70rpx;
       .input-placeholder{
-        padding-left: 20rpx;
+        padding-left: 4rpx;
         color: #939fb8;
         font-size: 28rpx;
       }
@@ -214,6 +219,13 @@
     }
     .left{
       padding-left: 10rpx;
+      .line{
+        width: 2rpx;
+        height: 36rpx;
+        position: relative;
+        left: 12rpx;
+        top: 8rpx;
+      }
     }
     .right{
       padding-right: 20rpx;
@@ -243,6 +255,8 @@
         image{
           width: 80rpx;
           height: 80rpx;
+          position: relative;
+          top: -6rpx;
         }
       }
       .new-info{
@@ -283,6 +297,8 @@
         image{
           width: 80rpx;
           height: 80rpx;
+          position: relative;
+          top: -6rpx;
         }
       }
       .new-info{

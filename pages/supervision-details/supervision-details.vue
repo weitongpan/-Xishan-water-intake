@@ -95,7 +95,6 @@
     .describe{
       width: 700rpx;
       margin: 0 auto;
-      border-radius: 12rpx;
       .title{
         font-size: 28rpx;
         font-family: PingFangSC, PingFangSC-Regular;
@@ -104,6 +103,7 @@
         margin: 24rpx 0 28rpx;
       }
       .text{
+        border-radius: 12rpx;
         padding: 18rpx 14rpx 18rpx 28rpx;
         background: #f7f7f7;
         font-size: 26rpx;
