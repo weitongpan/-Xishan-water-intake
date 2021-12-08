@@ -200,7 +200,6 @@
       box-sizing: border-box;
       line-height: 70rpx;
       .input-placeholder{
-        padding-left: 4rpx;
         color: #939fb8;
         font-size: 28rpx;
       }
@@ -219,6 +218,8 @@
     }
     .left{
       padding-left: 10rpx;
+      //background-color: red;
+      width: 50rpx;
       .line{
         width: 2rpx;
         height: 36rpx;

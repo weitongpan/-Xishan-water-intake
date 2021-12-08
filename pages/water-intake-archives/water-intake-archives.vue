@@ -92,57 +92,57 @@
 			return {
         gongGeData: [
           {
-            path: '../../static/water-intake-archives/qyxx@2x.png',
+            path: '../../static/water-intake-archives/qyxx@3x.png',
             text: '企业信息',
             pagePath: '/pages/enterprise-information/enterprise-information'
           },
           {
-            path: '../../static/water-intake-archives/szlz@2x.png',
+            path: '../../static/water-intake-archives/szlz@3x.png',
             text: '水资源论证',
             pagePath: '/pages/demonstration/demonstration'
           },
           {
-            path: '../../static/water-intake-archives/qsxk@2x.png',
+            path: '../../static/water-intake-archives/qsxk@3x.png',
             text: '取水许可',
             pagePath: '/pages/water-intake-permit/water-intake-permit'
           },
           {
-            path: '../../static/water-intake-archives/qsss@2x.png',
+            path: '../../static/water-intake-archives/qsss@3x.png',
             text: '取水设施 计量监控',
             pagePath: '/pages/monitor/monitor'
           },
           {
-            path: '../../static/water-intake-archives/qsjh@2x.png',
+            path: '../../static/water-intake-archives/qsjh@3x.png',
             text: '取水计划',
             pagePath: '/pages/water-intake-plan/water-intake-plan'
           },
           {
-            path: '../../static/water-intake-archives/szyfzj@2x.png',
+            path: '../../static/water-intake-archives/szyfzj@3x.png',
             text: '水资源费征缴',
             pagePath: '/pages/levy/levy'
           },
           {
-            path: '../../static/water-intake-archives/jd@2x.png',
+            path: '../../static/water-intake-archives/jd@3x.png',
             text: '监督管理',
             pagePath: '/pages/supervise/supervise'
           },
           {
-            path: '../../static/water-intake-archives/yssj@2x.png',
+            path: '../../static/water-intake-archives/yssj@3x.png',
             text: '用水审计',
             pagePath: '/pages/audit/audit'
           },
           {
-            path: '../../static/water-intake-archives/sphcs@2x.png',
+            path: '../../static/water-intake-archives/sphcs@3x.png',
             text: '水平衡测试',
             pagePath: '/pages/water-balance/water-balance'
           },
           {
-            path: '../../static/water-intake-archives/jxx@2x.png',
+            path: '../../static/water-intake-archives/jxx@3x.png',
             text: '节水型载体创建',
             pagePath: '/pages/water-conservation/water-conservation'
           },
           {
-            path: '../../static/water-intake-archives/sqjy@2x.png',
+            path: '../../static/water-intake-archives/sqjy@3x.png',
             text: '水权交易',
             pagePath: '/pages/transaction/transaction'
           }
@@ -172,7 +172,7 @@
 <style scoped lang="scss">
 .water-intake-archives{
   .search-item{
-    padding: 28rpx 26rpx 20rpx 36rpx;
+    padding: 28rpx 26rpx 4rpx 36rpx;
     .img-box{
       padding-top: 14rpx;
       image{
@@ -324,7 +324,7 @@
         display: inline-block;
         width: 130rpx;
         margin-top: 16rpx;
-        text-align: left;
+        text-align: center;
       }
     }
   }
