@@ -28,64 +28,71 @@
       <text class="left">水资源分区</text>
       <text class="right">1</text>
     </view>
-    <view class="item-box">
-      <text class="left">水源类型</text>
-      <text class="right">地表水</text>
-    </view>
-    <view class="item-box">
-      <text class="left">取水设施类型</text>
-      <text class="right">水泵</text>
-    </view>
-    <view class="item-box">
-      <text class="left">水泵设计扬程（单位m)</text>
-      <text class="right">0.063</text>
-    </view>
 
-    <view class="item-box">
-      <text class="left">水源类型</text>
-      <text class="right">地下水</text>
-    </view>
-    <view class="item-box">
-      <text class="left">取水设施类型</text>
-      <text class="right">水井</text>
-    </view>
-    <view class="item-box">
-      <text class="left">水井数量</text>
-      <text class="right">2</text>
-    </view>
-    <view class="well">
-      <view class="title">水井</view>
-      <view class="table">
-        <view class="head">
-          <text class="number">#</text>
-          <text class="type">开采层位</text>
-          <text class="yield">井深(m)</text>
-          <text class="quota">井径(m)</text>
-        </view>
-        <view class="body-r">
-          <text class="number">01</text>
-          <text class="type">第2层</text>
-          <text class="yield">16</text>
-          <text class="quota">2</text>
-        </view>
-        <view class="body-r">
-          <text class="number">02</text>
-          <text class="type">第2层</text>
-          <text class="yield">16</text>
-          <text class="quota">2</text>
-        </view>
-        <view class="body-r">
-          <text class="number">03</text>
-          <text class="type">第2层</text>
-          <text class="yield">16</text>
-          <text class="quota">2</text>
+<!--    地表水显示内容-->
+<!--    <view>-->
+<!--      <view class="item-box">-->
+<!--        <text class="left">水源类型</text>-->
+<!--        <text class="right">地表水</text>-->
+<!--      </view>-->
+<!--      <view class="item-box">-->
+<!--        <text class="left">取水设施类型</text>-->
+<!--        <text class="right">水泵</text>-->
+<!--      </view>-->
+<!--      <view class="item-box">-->
+<!--        <text class="left">水泵设计扬程（单位m)</text>-->
+<!--        <text class="right">0.063</text>-->
+<!--      </view>-->
+<!--    </view>-->
+
+<!--    地下水显示内容-->
+    <view>
+      <view class="item-box">
+        <text class="left">水源类型</text>
+        <text class="right">地下水</text>
+      </view>
+      <view class="item-box">
+        <text class="left">取水设施类型</text>
+        <text class="right">水井</text>
+      </view>
+      <view class="item-box">
+        <text class="left">水井数量</text>
+        <text class="right">2</text>
+      </view>
+      <view class="well">
+        <view class="title">水井</view>
+        <view class="table">
+          <view class="head">
+            <text class="number">#</text>
+            <text class="type">开采层位</text>
+            <text class="yield">井深(m)</text>
+            <text class="quota">井径(m)</text>
+          </view>
+          <view class="body-r">
+            <text class="number">01</text>
+            <text class="type">第2层</text>
+            <text class="yield">16</text>
+            <text class="quota">2</text>
+          </view>
+          <view class="body-r">
+            <text class="number">02</text>
+            <text class="type">第2层</text>
+            <text class="yield">16</text>
+            <text class="quota">2</text>
+          </view>
+          <view class="body-r">
+            <text class="number">03</text>
+            <text class="type">第2层</text>
+            <text class="yield">16</text>
+            <text class="quota">2</text>
+          </view>
         </view>
       </view>
     </view>
 
 
     <view class="item-box">
-      <text class="left">日最大取水能力（单位1m3/d)</text>
+      <text class="left">日最大取水能力（单位m3/d)</text>
       <text class="right">5479.5</text>
     </view>
     <view class="item-box">
@@ -137,7 +144,7 @@
       <u-icon name="arrow-right" color="#e6e6e6" size="16"></u-icon>
     </view>
     <view class="table-box">
-      <view class="title">日常维修记录</view>
+      <view class="title">⽇常运维记录</view>
       <view class="table">
         <view class="head">
           <text class="number">#</text>

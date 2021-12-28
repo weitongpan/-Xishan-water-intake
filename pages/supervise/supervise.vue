@@ -19,6 +19,9 @@
             <view class="decision">
               <text>填报单位</text>
             </view>
+            <view class="decision">
+              <text>填报日期</text>
+            </view>
           </view>
           <view class="table-r" v-for="(item, index) in tableData" :key="index">
             <view class="number">
@@ -35,6 +38,9 @@
             </view>
             <view class="decision">
               <text>{{ item.t4 }}</text>
+            </view>
+            <view class="decision">
+              <text>{{ item.t5 }}</text>
             </view>
           </view>
         </view>
@@ -53,57 +59,33 @@ export default {
           t1: '9194583920028589D',
           t2: '日常监管',
           t3: '查看',
-          t4: '东港镇水利管理站'
+          t4: '东港镇水利管理站',
+          t5: '2020-10-11'
         },
         {
           id: '02',
           t1: '9194583920028589D',
           t2: '日常监管',
           t3: '查看',
-          t4: '东港镇水利管理站'
+          t4: '东港镇水利管理站',
+          t5: '2020-10-11'
         },
         {
           id: '03',
           t1: '9194583920028589D',
           t2: '日常监管',
           t3: '查看',
-          t4: '东港镇水利管理站'
+          t4: '东港镇水利管理站',
+          t5: '2020-10-11'
         },
         {
           id: '04',
           t1: '9194583920028589D',
           t2: '日常监管',
           t3: '查看',
-          t4: '东港镇水利管理站'
+          t4: '东港镇水利管理站',
+          t5: '2020-10-11'
         },
-        {
-          id: '05',
-          t1: '9194583920028589D',
-          t2: '日常监管',
-          t3: '查看',
-          t4: '东港镇水利管理站'
-        },
-        {
-          id: '06',
-          t1: '9194583920028589D',
-          t2: '日常监管',
-          t3: '查看',
-          t4: '东港镇水利管理站'
-        },
-        {
-          id: '07',
-          t1: '9194583920028589D',
-          t2: '日常监管',
-          t3: '查看',
-          t4: '东港镇水利管理站'
-        },
-        {
-          id: '08',
-          t1: '9194583920028589D',
-          t2: '日常监管',
-          t3: '查看',
-          t4: '东港镇水利管理站'
-        }
       ]
     }
   },
@@ -124,7 +106,7 @@ export default {
     .roll{
       overflow-x: auto;
       .table{
-        width: 880rpx;
+        width: 960rpx;
         border: 2rpx solid #e6e6e6;
         .head{
           display: flex;

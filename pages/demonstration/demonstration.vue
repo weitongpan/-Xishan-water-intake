@@ -11,34 +11,7 @@
     </view>
     <view class="item">
       <view class="left">
-        <text>水资源论证报告</text>
-      </view>
-      <view class="right">
-        <text>归档日期：2021-11-15</text>
-        <u-icon name="arrow-right" color="#9ba0ab" size="12"/>
-      </view>
-    </view>
-    <view class="item">
-      <view class="left">
-        <text>水资源论证报告</text>
-      </view>
-      <view class="right">
-        <text>归档日期：2021-11-15</text>
-        <u-icon name="arrow-right" color="#9ba0ab" size="12"/>
-      </view>
-    </view>
-    <view class="item">
-      <view class="left">
-        <text>水资源论证报告</text>
-      </view>
-      <view class="right">
-        <text>归档日期：2021-11-15</text>
-        <u-icon name="arrow-right" color="#9ba0ab" size="12"/>
-      </view>
-    </view>
-    <view class="item">
-      <view class="left">
-        <text>水资源论证报告</text>
+        <text>节⽔评价</text>
       </view>
       <view class="right">
         <text>归档日期：2021-11-15</text>

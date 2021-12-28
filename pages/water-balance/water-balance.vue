@@ -13,7 +13,7 @@
       </view>
     </view>
     <view class="table-box">
-      <view class="title">文件及归档材料</view>
+      <view class="title">查询管理规范</view>
       <view class="table">
         <view class="head">
           <text class="number">#</text>

@@ -7,7 +7,7 @@
         <text class="left">当前年度</text>
       </view>
       <view class="right-box">
-        <text class="right">2021</text>
+        <text class="right">{{ year }}</text>
         <u-icon name="arrow-right" size="16" color="#D5D5D5"></u-icon>
       </view>
 
@@ -21,11 +21,11 @@
       <text class="right">9194583920028330589D</text>
     </view>
     <view class="item-box">
-      <text class="left">许可证年取水量(万m3/年)</text>
+      <text class="left">许可证年取⽔总量(万m3/年)</text>
       <text class="right">200</text>
     </view>
     <view class="item-box">
-      <text class="left">水资源类型</text>
+      <text class="left">⽔源类型</text>
       <text class="right">地表水</text>
     </view>
     <view class="item-box one">
@@ -40,7 +40,7 @@
         <text>水资源费</text>
       </view>
       <view @click="activeClick(2)" :class="{active: activeIndex === 2}">
-        <text>水利工程费</text>
+        <text>⽔利⼯程⽔费</text>
       </view>
     </view>
     <view class="table-box table-box1" v-if="activeIndex === 0">
@@ -138,6 +138,9 @@
             <view class="decision">
               <text>累计应收费用</text>
             </view>
+            <view class="decision">
+              <text>累计实收费⽤</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
@@ -151,6 +154,9 @@
             </view>
             <view class="evaluation-form">
               <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
             </view>
             <view class="decision">
               <text>0.00</text>
@@ -172,6 +178,9 @@
             <view class="decision">
               <text>0.00</text>
             </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
@@ -185,6 +194,9 @@
             </view>
             <view class="evaluation-form">
               <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
             </view>
             <view class="decision">
               <text>0.00</text>
@@ -206,6 +218,9 @@
             <view class="decision">
               <text>0.00</text>
             </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
@@ -219,6 +234,9 @@
             </view>
             <view class="evaluation-form">
               <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
             </view>
             <view class="decision">
               <text>0.00</text>
@@ -246,6 +264,9 @@
             <view class="decision">
               <text>累计应收费用</text>
             </view>
+            <view class="decision">
+              <text>累计实收费⽤</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
@@ -259,6 +280,9 @@
             </view>
             <view class="evaluation-form">
               <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
             </view>
             <view class="decision">
               <text>0.00</text>
@@ -280,6 +304,9 @@
             <view class="decision">
               <text>0.00</text>
             </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
@@ -293,6 +320,9 @@
             </view>
             <view class="evaluation-form">
               <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
             </view>
             <view class="decision">
               <text>0.00</text>
@@ -314,6 +344,9 @@
             <view class="decision">
               <text>0.00</text>
             </view>
+            <view class="decision">
+              <text>0.00</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
@@ -327,6 +360,9 @@
             </view>
             <view class="evaluation-form">
               <text>0</text>
+            </view>
+            <view class="decision">
+              <text>0.00</text>
             </view>
             <view class="decision">
               <text>0.00</text>
@@ -337,9 +373,11 @@
     </view>
     <u-picker :show="show"
               :columns="columns"
-              :defaultIndex="[2]"
+              :defaultIndex="[1]"
               @cancel="pickerHied"
               title="年份"
+              @close="pickerHied"
+              @confirm="confirm"
               :closeOnClickOverlay="true"
 
     />
@@ -350,14 +388,19 @@
 	export default {
 		data() {
 			return {
+        year: '2020',
         show: false,
-        activeIndex: 1,
+        activeIndex: 0,
         columns: [
-          ['2020', '2019', '2018', '2017', '2016']
+          ['2021', '2020', '2019', '2018', '2017', '2016']
         ]
 			}
 		},
 		methods: {
+      confirm(option) {
+        this.year = option.value[0]
+        this.show = false
+      },
       pickerHied() {
         console.log(123)
         this.show = false
@@ -435,7 +478,7 @@
     .roll{
       overflow-x: auto;
       .table{
-        width: 840rpx;
+        width: 950rpx;
         border: 2rpx solid #e6e6e6;
         .head{
           display: flex;

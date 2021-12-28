@@ -1,5 +1,8 @@
 <template>
 	<view class="index">
+    <view class="fh" :style="{top: `${fhTop}rpx`}" v-if="searchIsShow" @click="returnClick">
+      <image src="../../static/index/fh.png"></image>
+    </view>
     <view class="top">
       <view class="title">锡山区取水单位信息查询</view>
       <view class="search-box">
@@ -113,6 +116,7 @@
     components: { URow },
     data() {
 			return {
+			  fhTop: 0,
 			  searchData: [
           {
             d1: '../../static/public/zw.png',
@@ -146,7 +150,13 @@
 		onLoad() {
 
 		},
+    onReady() {
+      this.fhTop = uni.getMenuButtonBoundingClientRect().top * 2
+    },
 		methods: {
+      returnClick() {
+        this.searchIsShow = false
+      },
       goPage() {
         uni.navigateTo({
           url: '/pages/water-intake-archives/water-intake-archives'
@@ -175,6 +185,15 @@
 </script>
 
 <style scoped lang="scss">
+.fh{
+  position: fixed;
+  top: 50rpx;
+  left: 40rpx;
+  image{
+    width: 50rpx;
+    height: 50rpx;
+  }
+}
 .top{
   width: 100%;
   height: 468rpx;
@@ -219,7 +238,7 @@
     .left{
       padding-left: 10rpx;
       //background-color: red;
-      width: 50rpx;
+      width: 60rpx;
       .line{
         width: 2rpx;
         height: 36rpx;

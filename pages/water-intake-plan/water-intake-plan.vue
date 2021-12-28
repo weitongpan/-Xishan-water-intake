@@ -19,6 +19,12 @@
             <view class="decision">
               <text>取水计划下达文件</text>
             </view>
+            <view class="decision">
+              <text>取⽔计划调整申请表</text>
+            </view>
+            <view class="decision">
+              <text>调整计划下达⽂件</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
@@ -28,10 +34,16 @@
               <text>2021</text>
             </view>
             <view class="application">
-              <text>计划表.txt</text>
+              <text>100</text>
             </view>
             <view class="evaluation-form">
               <text>申请表.txt</text>
+            </view>
+            <view class="decision">
+              <text>文件.txt</text>
+            </view>
+            <view class="decision">
+              <text>文件.txt</text>
             </view>
             <view class="decision">
               <text>文件.txt</text>
@@ -45,10 +57,16 @@
               <text>2021</text>
             </view>
             <view class="application">
-              <text>计划表.txt</text>
+              <text>100</text>
             </view>
             <view class="evaluation-form">
               <text>申请表.txt</text>
+            </view>
+            <view class="decision">
+              <text>文件.txt</text>
+            </view>
+            <view class="decision">
+              <text>文件.txt</text>
             </view>
             <view class="decision">
               <text>文件.txt</text>
@@ -62,7 +80,7 @@
               <text>2021</text>
             </view>
             <view class="application">
-              <text>计划表.txt</text>
+              <text>100</text>
             </view>
             <view class="evaluation-form">
               <text>申请表.txt</text>
@@ -70,19 +88,31 @@
             <view class="decision">
               <text>文件.txt</text>
             </view>
+            <view class="decision">
+              <text>文件.txt</text>
+            </view>
+            <view class="decision">
+              <text>文件.txt</text>
+            </view>
           </view>
           <view class="table-r">
             <view class="number">
-              <text>999</text>
+              <text>01</text>
             </view>
             <view class="year">
               <text>2021</text>
             </view>
             <view class="application">
-              <text>计划表.txt</text>
+              <text>100</text>
             </view>
             <view class="evaluation-form">
               <text>申请表.txt</text>
+            </view>
+            <view class="decision">
+              <text>文件.txt</text>
+            </view>
+            <view class="decision">
+              <text>文件.txt</text>
             </view>
             <view class="decision">
               <text>文件.txt</text>
@@ -114,7 +144,7 @@
     .roll{
       overflow-x: auto;
       .table{
-        width: 880rpx;
+        width: 1400rpx;
         border: 2rpx solid #e6e6e6;
         .head{
           display: flex;

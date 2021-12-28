@@ -1,7 +1,9 @@
 <template>
   <view class="water-conservation">
     <view class="above">
-      根据《江苏省节约用水条例》第十三条的规定： 计划用水户应当加强用水、节水设施的日常维护，建立用水、节水记录台账，定期进行用水合理性分析、水平衡测试，按时报送用水、节水报表。 重点计划用水户应当每三年开展一次水平衡测试，其他计划用水户应当每五年开展一次水平衡测试。计划用水户超计划用水百分之三十以上的，应当进行水平衡测试和接受水行政主管部门的用水审计，并对存在问题予以整改。
+      根据《江苏省节约⽤⽔条例》《江苏省节⽔⾏动实施⽅案》和省⽔利厅、省发展改
+      ⾰委《关于进⼀步规范省级节⽔型载体管理的通知》（苏⽔节〔2020〕8 号）要求，各地应积极
+      开展省级节⽔型企业、社区、灌区等载体建设
     </view>
     <view class="item">
       <view class="left">
@@ -22,6 +24,7 @@
             <text class="yield">任务下达文件</text>
             <text class="opinion">创建成功文件</text>
             <text class="report">台账资料</text>
+            <text class="report">复查情况</text>
           </view>
           <view class="body-r">
             <text class="number">01</text>
@@ -29,20 +32,23 @@
             <text class="yield">任务文件.txt</text>
             <text class="opinion">成功文件.txt</text>
             <text class="report">台账</text>
+            <text class="report">情况描述</text>
           </view>
           <view class="body-r">
-            <text class="number">01</text>
+            <text class="number">02</text>
             <text class="type">2021</text>
             <text class="yield">任务文件.txt</text>
             <text class="opinion">成功文件.txt</text>
             <text class="report">台账</text>
+            <text class="report">情况描述</text>
           </view>
           <view class="body-r">
-            <text class="number">01</text>
+            <text class="number">03</text>
             <text class="type">2021</text>
             <text class="yield">任务文件.txt</text>
             <text class="opinion">成功文件.txt</text>
             <text class="report">台账</text>
+            <text class="report">情况描述</text>
           </view>
         </view>
       </view>

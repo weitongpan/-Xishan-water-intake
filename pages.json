@@ -11,7 +11,7 @@
             "path" : "pages/water-intake-archives/water-intake-archives",
             "style" :
             {
-                "navigationBarTitleText": "取水档案",
+                "navigationBarTitleText": "锡⼭区取⽔单位信息查询",
                 "enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#4181F0"
             }

@@ -39,7 +39,9 @@
     </view>
     <view class="item-box" @click="isTips">
       <view>
-        <text class="left">取水许可申请表</text>
+        <text class="left">
+          申请表
+        </text>
       </view>
       <view class="right-box">
         <text class="right">2021-11-15</text>
@@ -49,7 +51,9 @@
     </view>
     <view class="item-box" @click="isTips">
       <view>
-        <text class="left">取水许可登记表</text>
+        <text class="left">
+          登记表
+        </text>
       </view>
       <view class="right-box">
         <text class="right">2021-11-15</text>
@@ -59,7 +63,9 @@
     </view>
     <view class="item-box" @click="isTips">
       <view>
-        <text class="left">取水许可批复文件</text>
+        <text class="left">
+          批复文件
+        </text>
       </view>
       <view class="right-box">
         <text class="right">2021-11-15</text>
@@ -68,11 +74,18 @@
 
     </view>
     <view class="item-box" @click="isTips">
-      <text class="left">取水许可证</text>
-      <text class="right"></text>
+      <text class="left">
+        许可证
+      </text>
+      <view class="right-box">
+        <text class="right">2021-11-15</text>
+        <u-icon name="arrow-right" size="16" color="#D5D5D5"></u-icon>
+      </view>
     </view>
     <view class="table-box">
-      <view class="title">延续审批材料</view>
+      <view class="title">
+<!--        延续审批材料-->
+      </view>
       <view class="roll">
         <view class="table">
           <view class="head">
@@ -80,7 +93,7 @@
               <text>#</text>
             </view>
             <view class="year">
-              <text style="color: #FB1818">*</text>
+<!--              <text style="color: #FB1818">*</text>-->
               <text>年份</text>
             </view>
             <view class="application">

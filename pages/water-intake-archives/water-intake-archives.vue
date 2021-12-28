@@ -52,9 +52,9 @@
       <view class="left">
         <image src="../../static/water-intake-archives/iphone@2x.png"/>
         <text class="txt">
-          联系电话：
+          ⽔务经理联系电话：
         </text>
-        <text class="number">
+        <text class="number" @click="iphone('18728749822')">
           18728749822
         </text>
       </view>
@@ -83,6 +83,15 @@
     <view class="tab-bar">
       <image src="../../static/water-intake-archives/index@2x.png" @click="goIndexPage"/>
     </view>
+    <u-modal :show="uModal.show"
+             :title="uModal.title"
+             :showCancelButton="uModal.showCancelButton"
+             :content='uModal.content'
+             :closeOnClickOverlay="uModal.closeOnClickOverlay"
+             @close="close"
+             @cancel="close"
+             @confirm="confirm"
+    />
 	</view>
 </template>
 
@@ -146,10 +155,32 @@
             text: '水权交易',
             pagePath: '/pages/transaction/transaction'
           }
-        ]
+        ],
+        uModal: {
+          show: false,
+          title: '是否拨打电话?',
+          content: '',
+          showCancelButton: true,
+          closeOnClickOverlay: true,
+          iphone: ''
+        }
 			}
 		},
 		methods: {
+      confirm() {
+        console.log(123)
+        uni.makePhoneCall({
+          phoneNumber: this.uModal.iphone
+        })
+      },
+      close() {
+        this.uModal.show = false
+      },
+      iphone(iphone) {
+        this.uModal.show = true
+        this.uModal.iphone = iphone
+        console.log(this.uModal.iphone)
+      },
       goMore() {
         uni.navigateTo({
           url: '/pages/enterprise-information/enterprise-information'
